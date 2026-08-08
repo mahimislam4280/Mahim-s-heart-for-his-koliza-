@@ -8,8 +8,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 let scene, camera, renderer, particles, composer, controls;
 let time = 0;
 let isAnimationEnabled = true;
-let currentTheme = 'molten';
-let morphTarget = 0;
+let currentTheme = 'cosmic';
+let morphTarget = 1;
 let morphProgress = 0;
 
 const particleCount = 10000;
@@ -459,7 +459,7 @@ function updateParticleColorsAndSizes() {
 
 function animate() {
   requestAnimationFrame(animate);
-  time += 0.02;
+  time += 0.06;
   controls.update();
 
   if (isAnimationEnabled) {
